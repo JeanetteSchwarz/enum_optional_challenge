@@ -19,6 +19,7 @@ public class Main {
         System.out.println(personRepo.findById("14").isEmpty()); // true, empty box
 
         System.out.println(personRepo.findByName("Phoebe"));
+        System.out.println(personRepo.findByName("Ross"));
 
         System.out.println(personRepo.countByGender(Gender.MALE));
         System.out.println(personRepo.countByGender(Gender.FEMALE));

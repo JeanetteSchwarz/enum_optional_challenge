@@ -18,7 +18,7 @@ public class PersonRepository {
 
     public Optional<Person> findByName(String name){
         for (Person p : persons){
-            if(p.id().equals(name)){
+            if(p.name().equals(name)){
                 return Optional.of(p);
             }
         }
@@ -34,4 +34,6 @@ public class PersonRepository {
         }
         return count;
     }
+
+
 }
